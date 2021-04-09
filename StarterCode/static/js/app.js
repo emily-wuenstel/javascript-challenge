@@ -36,16 +36,19 @@ function runEnter() {
         filteredData
     }
 
+    //if the length is not zero, build the table based on the reults from filter
     if (response.filteredData.length !== 0) {
         buildTable(filteredData)
     }
 
+    //if the length is zero, inform the user no results were available and to try again
     else {
         tbody.html('')
         tbody.append("tr").append("td").text("No results available, please search again");
     }
 }
 
+//buildtable function which is called to build the table when results are found (called in line 41)
 function buildTable(d) {
 
     tbody.html('');
