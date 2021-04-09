@@ -2,7 +2,6 @@
 var tableData = data;
 
 // YOUR CODE HERE!
-
 var tbody = d3.select('tbody');
 
 //console.log(data);
@@ -63,4 +62,5 @@ function buildTable(d) {
 
 }
 
+//build entire table
 buildTable(data)
